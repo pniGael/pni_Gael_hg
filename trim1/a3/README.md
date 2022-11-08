@@ -61,7 +61,7 @@ Crimpamos los conectores (en caso del directo y cruzado); cerramos el conector e
 <br>
 Con ayuda de los tester, comprobamos que los cables funcionan correctamente, las luces deben encerder en un orden determinado.
 <br>
-![1](img/1.jpeg)
+![1](imgs/1.jpeg)
 
 #### ***Conclusiones***. <a name="id5"></a>
 
