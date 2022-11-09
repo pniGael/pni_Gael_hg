@@ -41,7 +41,7 @@ Los objetivos principales de esta práctica son adquirir soltura a la hora de la
 
 #### ***Desarrollo***. <a name="id4"></a>
 
-Link del video con los pasos: 
+Link del video con los pasos: https://www.youtube.com/watch?v=md739X9gQuQ
 <br>
 En los tres cables, el primer paso a elaborar es pelar y destrenzar los cables.
 <br>
@@ -61,7 +61,6 @@ Crimpamos los conectores (en caso del directo y cruzado); cerramos el conector e
 <br>
 Con ayuda de los tester, comprobamos que los cables funcionan correctamente, las luces deben encerder en un orden determinado.
 <br>
-![1](imgs/1.jpeg)
 
 #### ***Conclusiones***. <a name="id5"></a>
 
