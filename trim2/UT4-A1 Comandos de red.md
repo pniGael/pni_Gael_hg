@@ -1,31 +1,4 @@
-![1](https://user-images.githubusercontent.com/113589134/213814389-2a43da6d-32bf-4c0b-99bf-983335096f4c.png)
-![2](https://user-images.githubusercontent.com/113589134/213814395-7fa51597-3ed0-4706-b394-9b2f703337a4.png)
-![3](https://user-images.githubusercontent.com/113589134/213814397-f7f0b0cd-2ddd-46ab-914c-324cafb262b9.png)
-![4](https://user-images.githubusercontent.com/113589134/213814398-bdceda90-2381-42a8-bf53-5037eef7706c.png)
-![5](https://user-images.githubusercontent.com/113589134/213814400-2e76f9e8-a209-45a2-94ea-9b1ff5938164.png)
-![7](https://user-images.githubusercontent.com/113589134/213814402-195ea15c-a311-40f0-ab6d-adc0ae9af113.png)
-![8](https://user-images.githubusercontent.com/113589134/213814403-397f991c-e651-411b-8b94-5163cb68416b.png)
-![9](https://user-images.githubusercontent.com/113589134/213814404-d69cc7d9-11eb-45a0-a987-c7d6e7bd13a2.png)
-![10](https://user-images.githubusercontent.com/113589134/213814406-48d7b58f-5c9d-4a54-95a9-e428bad53086.png)
-![11](https://user-images.githubusercontent.com/113589134/213814408-b9d8ff5e-c659-4ee9-94cc-52a8635c95dc.png)
-![12](https://user-images.githubusercontent.com/113589134/213814409-3328bc5c-d240-4f56-981b-16b86209b557.png)
-![13](https://user-images.githubusercontent.com/113589134/213814411-4b0f932b-1f1b-4882-b09a-5b099ec8c84d.png)
-![14](https://user-images.githubusercontent.com/113589134/213814412-0de603d6-7bd3-4667-8fd2-ac08430878be.png)
-![15](https://user-images.githubusercontent.com/113589134/213814415-c0d79d70-e478-43ca-82b0-0f7ad33ac27a.png)
-![16](https://user-images.githubusercontent.com/113589134/213814417-47c7b20e-6b21-4ef9-9ec6-812cf19d9dd9.png)
-![17](https://user-images.githubusercontent.com/113589134/213814420-9723aa0f-87cf-4e42-aab1-fb50055d42f0.png)
-![18](https://user-images.githubusercontent.com/113589134/213814421-3ed355dd-4a29-441e-ade0-5e500bffed92.png)
-![19](https://user-images.githubusercontent.com/113589134/213814422-0aed575a-9b06-4a9d-ba28-253ab79d1f3d.png)
-![20](https://user-images.githubusercontent.com/113589134/213814425-12b18dd8-cf5d-4993-8373-056ac0d622b1.png)
-![21](https://user-images.githubusercontent.com/113589134/213814428-f2db4a36-7d63-474c-ab66-a8f5e8a88f55.png)
-![22](https://user-images.githubusercontent.com/113589134/213814429-baad4bd5-40ae-42fc-bfef-9427402c8a6c.png)
-![23](https://user-images.githubusercontent.com/113589134/213814431-66b51930-f4ae-4fd1-a925-3a18c4ae1cca.png)
-![24](https://user-images.githubusercontent.com/113589134/213814433-761b0d4f-6c4c-4454-9685-7db627726e34.png)
-![25](https://user-images.githubusercontent.com/113589134/213814435-7df9bd49-b269-45f4-8876-68f7ab7faa9c.png)
-![26](https://user-images.githubusercontent.com/113589134/213814436-a884ceaf-5fbb-4efe-a6ed-2425967576d0.png)
-![27](https://user-images.githubusercontent.com/113589134/213814438-ad1ccc30-cdfc-4679-9621-8421062aa059.png)
-![28](https://user-images.githubusercontent.com/113589134/213814441-142e3750-634c-4948-9d6a-6fee2b5cb7ba.png)
-![29](https://user-images.githubusercontent.com/113589134/213814442-bdaf3580-5f65-42b0-8b7e-833f36db8de3.png)
+
 ﻿
 #**PRÁCTICA DE COMANDOS DE RED EN WINDOWS Y LINUX I**
 
@@ -67,40 +40,40 @@ Este comando nos permite ver datos relacionados con la configuración de red de 
 |Tiempo de concesión de la IP|Concesión obtenida: martes, 10 de enero de 2023 9:58:19 / La concesión expira : miércoles, 11 de enero de 2023 9:58:19|  
 |Nombre del adaptador de red|Intel(R) PRO/1000 MT Desktop Adapter|
 
-![Imagen 1](/img/1.png)
-![Imagen 2](/img/2.png)
+![1](https://user-images.githubusercontent.com/113589134/213814389-2a43da6d-32bf-4c0b-99bf-983335096f4c.png)
+![2](https://user-images.githubusercontent.com/113589134/213814395-7fa51597-3ed0-4706-b394-9b2f703337a4.png)
 
 + Liberar la configuración IP del adaptador con ***`ipconfig /release`*** y a continuación volver a usar el comando ***`ipconfig`*** . ¿Cuál es la ip ahora?
 
 La nueva ip es:  169.254.78.165
 
-![Imagen 3](/img/3.png)
+![3](https://user-images.githubusercontent.com/113589134/213814397-f7f0b0cd-2ddd-46ab-914c-324cafb262b9.png)
 
 
 + Ejecutar el comando ***`ipconfig /renew`*** solicitando una renovación de dirección IP. A continuación volver a ejecutar ***`ipconfig`*** . ¿Cuál es la nueva ip?
 
 La nueva ip es:  10.0.2.15
 
-![Imagen 4](/img/4.png)
+![4](https://user-images.githubusercontent.com/113589134/213814398-bdceda90-2381-42a8-bf53-5037eef7706c.png)
 
 
 + Ejecutar el comando ***`ipconfig /displaydns`*** y comprobar la información que contiene la caché DNS de tu equipo. Ejecuta ahora el comando ***`ipconfig /flushdns`** y después muestra otra vez el contenido de la caché DNS. ¿Qué información muestra ahora? ¿Qué ha ocurrido?*
 
 Al ejecutar de nuevo el comando desplaynds no se muestra nada, ya que hemos borrado la caché del DNS.
 
-![Imagen 5](/img/5.png)
+![5](https://user-images.githubusercontent.com/113589134/213814400-2e76f9e8-a209-45a2-94ea-9b1ff5938164.png)
 
 
 
 + Usar el navegador para ir a la web [https://www.w3schools.com]() y luego ejecutar el comando ***`ipconfig /displaydns`*** . Hacer una captura de pantalla donde se muestre que se ha cacheado la ip de ese nombre de dominio y pegarla aquí debajo.
 
-![Iamgen 6](/img/7.png)
+![7](https://user-images.githubusercontent.com/113589134/213814402-195ea15c-a311-40f0-ab6d-adc0ae9af113.png)
 
 
 
 + Borra la caché DNS con el comando ***`ipconfig /flushdns`*** y muestra una captura de pantalla en que se vea que ya no hay registros DNS en caché.
 
-![Imagen 5](/img/5.png)
+
 
 
 ***2. Comando `ifconfig` (Línux)***
@@ -131,27 +104,27 @@ Este comando nos permite mostrar la configuración IP de nuestra máquina y conf
 |Tiempo de concesión de la IP|valid_lft 86205sec preferred_lft 86205sec| 
 |Nombre del adaptador de red|enp0s3| 
 
-![Imagen 8](pni_Gael_hg/trim2/8.png)
+![8](https://user-images.githubusercontent.com/113589134/213814403-397f991c-e651-411b-8b94-5163cb68416b.png)
 
-![Imagen 9](/img/9.png)
+![9](https://user-images.githubusercontent.com/113589134/213814404-d69cc7d9-11eb-45a0-a987-c7d6e7bd13a2.png)
 
 + Desactiva tu tarjeta de red con el comando ***`ifconfig eth0 down`***. A continuación, comprueba con un ***`ifconfig`*** que la tarjeta ya no aparece, se ha desactivado. Haz una captura de pantalla donde se vea que ya no está activada.
 
-![Imagen 10](/img/10.png)
+![10](https://user-images.githubusercontent.com/113589134/213814406-48d7b58f-5c9d-4a54-95a9-e428bad53086.png)
 
 
 + Usa el comando ***`ifconfig –a`*** para ver que la tarjeta está desactivada (pega una captura de pantalla debajo).
 
-![Imagen 11](/img/11.png)
+![11](https://user-images.githubusercontent.com/113589134/213814408-b9d8ff5e-c659-4ee9-94cc-52a8635c95dc.png)
 
 
 + Ahora activa la tarjeta con el comando ***`ifconfig eth0 up`*** y luego con el comando `ifconfig` comprueba que ya está habilitada (pega una captura de pantalla debajo).
 
-![Imagen 12](/img/12.png)
+![12](https://user-images.githubusercontent.com/113589134/213814409-3328bc5c-d240-4f56-981b-16b86209b557.png)
 
 + Usa el comando ***`ifconfig eth0 192.168.99.99 netmask 255.255.255.0`*** y pega una captura de pantalla que muestre que el adaptador de red se ha configurado correctamente.
 
-![Imagen 13](/img/13.png)
+![13](https://user-images.githubusercontent.com/113589134/213814411-4b0f932b-1f1b-4882-b09a-5b099ec8c84d.png)
 
 
 ***3. Comando ping (Windows y Línux)***
@@ -172,22 +145,21 @@ Algunas opciones para Windows/Linux son
 
 + Desde una máquina con línux ejecuta el comando ***`ping –s 100 –c 2  ip\_puertadeenlace`*** para que se envíen dos ecos de 100 bytes. Muestra una captura de pantalla con el resultado.
 
-![Imagen 16](/img/16.png)
+![16](https://user-images.githubusercontent.com/113589134/213814417-47c7b20e-6b21-4ef9-9ec6-812cf19d9dd9.png)
 
 
 + Desde una máquina con windows usa el comando ***`ping –i 2 ip\_puertadeenlace`*** para hacer un ping a nuestra puerta de enlace con un TTL igual a 2. 
 
-![Imagen 17](/img/14.png)
+![17](https://user-images.githubusercontent.com/113589134/213814420-9723aa0f-87cf-4e42-aab1-fb50055d42f0.png)
 
-![Imagen 18](/img/15.png)
 
 + Luego haz un ping de las mismas características, pero a google ***`ping –i 2 www.google.es`*** Pega una captura de pantalla con el resultado y explica lo que ha pasado.
 
-![Imagen 18](/img/18.png)
+![18](https://user-images.githubusercontent.com/113589134/213814421-3ed355dd-4a29-441e-ade0-5e500bffed92.png)
 
 + El comando ping nos da información sobre el tiempo de latencia de una red. Haz un ping a nuestra puerta de enlace y luego a otro a [www.google.es](http://www.google.es/). Busca información de lo que es el tiempo de latencia y compara los tiempos de latencia en ambos casos. 
 
-![Imagen 18](/img/18.png)
+![19](https://user-images.githubusercontent.com/113589134/213814422-0aed575a-9b06-4a9d-ba28-253ab79d1f3d.png)
 
 ***4. Comando route (Línux)***
 
@@ -225,25 +197,25 @@ Nos muestra las conexiones que tiene nuestro host abiertas con la red. Algunas o
 
 Lo que se muestra en estas columnas, por orden, son el puerto TCP, los paquetes recibidos, enviados, la dirección local, la dirección a la web y el estado de la conenexión entre las dos columnas anteriores.
 
-![Imagen 23](/img/23.png)
+![23](https://user-images.githubusercontent.com/113589134/213814431-66b51930-f4ae-4fd1-a925-3a18c4ae1cca.png)
 
 + Ahora espera unos segundos y vuelve a ejecutar `netstat -tn`. Comprobarás que algunas de las conexiones se han cerrado o están esperando para cerrarse. Además con la opción **-n** verás los resultados en formato numérico. Pon una captura de pantalla y explica la diferencia entre ***Established***, ***Time_wait*** y ***Close_Wait***.
 
 Lo que significa cada una de estos estados de red es, conexión establecida, conexión en tiempo de espera y conexión cerrada respectivamente.
 
-![Imagen 24](/img/24.png)
+![24](https://user-images.githubusercontent.com/113589134/213814433-761b0d4f-6c4c-4454-9685-7db627726e34.png)
 
 + Ejecuta ahora la orden `netstat -at` para que muestre las tanto las conexiones tcp abiertas como los puertos que están a la escucha. Copia una captura de pantalla donde se vean los puertos que tienes escuchando, explica qué significan los asteriscos en la columna ***“Foreign address”*** e investiga si tener esos puertos abiertos es normal o supone una amenaza.
 
 El tipo de conexión es TCP tendrá el estado LISTEN. Esto quiere decir que la máquina local está esperando a que otra máquina remota envíe datos. En este caso es normal tenrlos abiertos porque el equipo está conectado dentro de una red.
 
-![Imagen 25](/img/25.png)
+![25](https://user-images.githubusercontent.com/113589134/213814435-7df9bd49-b269-45f4-8876-68f7ab7faa9c.png)
 
 
 + Ejecuta el comando `netstat -s` para ver las estadísticas de red y haz una captura en la que se vean cuantos paquetes tcp has recibido y cuantos de ellos han sido erroneos.
 
-![Imagen 26](/img/26.png)
-![Imagen 27](/img/27.png)
+![26](https://user-images.githubusercontent.com/113589134/213814436-a884ceaf-5fbb-4efe-a6ed-2425967576d0.png)
+![27](https://user-images.githubusercontent.com/113589134/213814438-ad1ccc30-cdfc-4679-9621-8421062aa059.png)
 
 ***6. Comando arp (Línux y Windows)***
 
@@ -266,7 +238,7 @@ Al introducir una mac falsa, el ordenador ha perdido la conexión.
 
 + Borra la entrada falsa de la tabla arp con el comando `arp -d ip_puertadeenlace`.
 
-![Imagen 28](/img/28.png)
+![28](https://user-images.githubusercontent.com/113589134/213814441-142e3750-634c-4948-9d6a-6fee2b5cb7ba.png)
 
 
 ***7. Comando nslookup (Línux y Windows)***
@@ -281,4 +253,29 @@ Este comando nos da información sobre la resolución de nombres dns. Nos dice a
 Averigua el nombre del servidor DNS de 
 https://www.puertodelacruz.es . A continuación, ejecutamos el comando nslookup nombreServidorDNS y luego el comando `nslookup nombreServidorDNS 8.8.8.8`. Explica las causas de las diferencias que hay entre los resultados de las dos consultas.
 
-![Imagen 29](/img/29.png)
+![29](https://user-images.githubusercontent.com/113589134/213814442-bdaf3580-5f65-42b0-8b7e-833f36db8de3.png)
+
+
+
+Como tuve algunos problemas para poner las imágenes, adjunto algununas imagenes más:
+
+![10](https://user-images.githubusercontent.com/113589134/213814406-48d7b58f-5c9d-4a54-95a9-e428bad53086.png)
+![11](https://user-images.githubusercontent.com/113589134/213814408-b9d8ff5e-c659-4ee9-94cc-52a8635c95dc.png)
+![12](https://user-images.githubusercontent.com/113589134/213814409-3328bc5c-d240-4f56-981b-16b86209b557.png)
+![13](https://user-images.githubusercontent.com/113589134/213814411-4b0f932b-1f1b-4882-b09a-5b099ec8c84d.png)
+![14](https://user-images.githubusercontent.com/113589134/213814412-0de603d6-7bd3-4667-8fd2-ac08430878be.png)
+![15](https://user-images.githubusercontent.com/113589134/213814415-c0d79d70-e478-43ca-82b0-0f7ad33ac27a.png)
+![16](https://user-images.githubusercontent.com/113589134/213814417-47c7b20e-6b21-4ef9-9ec6-812cf19d9dd9.png)
+![17](https://user-images.githubusercontent.com/113589134/213814420-9723aa0f-87cf-4e42-aab1-fb50055d42f0.png)
+![18](https://user-images.githubusercontent.com/113589134/213814421-3ed355dd-4a29-441e-ade0-5e500bffed92.png)
+![19](https://user-images.githubusercontent.com/113589134/213814422-0aed575a-9b06-4a9d-ba28-253ab79d1f3d.png)
+![20](https://user-images.githubusercontent.com/113589134/213814425-12b18dd8-cf5d-4993-8373-056ac0d622b1.png)
+![21](https://user-images.githubusercontent.com/113589134/213814428-f2db4a36-7d63-474c-ab66-a8f5e8a88f55.png)
+![22](https://user-images.githubusercontent.com/113589134/213814429-baad4bd5-40ae-42fc-bfef-9427402c8a6c.png)
+![23](https://user-images.githubusercontent.com/113589134/213814431-66b51930-f4ae-4fd1-a925-3a18c4ae1cca.png)
+![24](https://user-images.githubusercontent.com/113589134/213814433-761b0d4f-6c4c-4454-9685-7db627726e34.png)
+![25](https://user-images.githubusercontent.com/113589134/213814435-7df9bd49-b269-45f4-8876-68f7ab7faa9c.png)
+![26](https://user-images.githubusercontent.com/113589134/213814436-a884ceaf-5fbb-4efe-a6ed-2425967576d0.png)
+![27](https://user-images.githubusercontent.com/113589134/213814438-ad1ccc30-cdfc-4679-9621-8421062aa059.png)
+![28](https://user-images.githubusercontent.com/113589134/213814441-142e3750-634c-4948-9d6a-6fee2b5cb7ba.png)
+![29](https://user-images.githubusercontent.com/113589134/213814442-bdaf3580-5f65-42b0-8b7e-833f36db8de3.png)
