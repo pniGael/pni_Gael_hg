@@ -1,3 +1,4 @@
+
 #**PRÁCTICA DE COMANDOS DE RED EN WINDOWS Y LINUX I**
 
 **Objetivo**
@@ -38,31 +39,40 @@ Este comando nos permite ver datos relacionados con la configuración de red de 
 |Tiempo de concesión de la IP|Concesión obtenida: martes, 10 de enero de 2023 9:58:19 / La concesión expira : miércoles, 11 de enero de 2023 9:58:19|  
 |Nombre del adaptador de red|Intel(R) PRO/1000 MT Desktop Adapter|
 
+![Imagen 1](/img/1.png)
+![Imagen 2](/img/2.png)
+
 + Liberar la configuración IP del adaptador con ***`ipconfig /release`*** y a continuación volver a usar el comando ***`ipconfig`*** . ¿Cuál es la ip ahora?
 
 La nueva ip es:  169.254.78.165
 
+![Imagen 3](/img/3.png)
 
 
 + Ejecutar el comando ***`ipconfig /renew`*** solicitando una renovación de dirección IP. A continuación volver a ejecutar ***`ipconfig`*** . ¿Cuál es la nueva ip?
 
 La nueva ip es:  10.0.2.15
 
+![Imagen 4](/img/4.png)
+
 
 + Ejecutar el comando ***`ipconfig /displaydns`*** y comprobar la información que contiene la caché DNS de tu equipo. Ejecuta ahora el comando ***`ipconfig /flushdns`** y después muestra otra vez el contenido de la caché DNS. ¿Qué información muestra ahora? ¿Qué ha ocurrido?*
 
 Al ejecutar de nuevo el comando desplaynds no se muestra nada, ya que hemos borrado la caché del DNS.
 
+![Imagen 5](/img/5.png)
+
 
 
 + Usar el navegador para ir a la web [https://www.w3schools.com]() y luego ejecutar el comando ***`ipconfig /displaydns`*** . Hacer una captura de pantalla donde se muestre que se ha cacheado la ip de ese nombre de dominio y pegarla aquí debajo.
 
-
+![Iamgen 6](/img/7.png)
 
 
 
 + Borra la caché DNS con el comando ***`ipconfig /flushdns`*** y muestra una captura de pantalla en que se vea que ya no hay registros DNS en caché.
 
+![Imagen 5](/img/5.png)
 
 
 ***2. Comando `ifconfig` (Línux)***
@@ -93,19 +103,27 @@ Este comando nos permite mostrar la configuración IP de nuestra máquina y conf
 |Tiempo de concesión de la IP|valid_lft 86205sec preferred_lft 86205sec| 
 |Nombre del adaptador de red|enp0s3| 
 
+![Imagen 8](/img/8.png)
+
+![Imagen 9](/img/9.png)
+
 + Desactiva tu tarjeta de red con el comando ***`ifconfig eth0 down`***. A continuación, comprueba con un ***`ifconfig`*** que la tarjeta ya no aparece, se ha desactivado. Haz una captura de pantalla donde se vea que ya no está activada.
+
+![Imagen 10](/img/10.png)
 
 
 + Usa el comando ***`ifconfig –a`*** para ver que la tarjeta está desactivada (pega una captura de pantalla debajo).
 
+![Imagen 11](/img/11.png)
+
 
 + Ahora activa la tarjeta con el comando ***`ifconfig eth0 up`*** y luego con el comando `ifconfig` comprueba que ya está habilitada (pega una captura de pantalla debajo).
 
-
+![Imagen 12](/img/12.png)
 
 + Usa el comando ***`ifconfig eth0 192.168.99.99 netmask 255.255.255.0`*** y pega una captura de pantalla que muestre que el adaptador de red se ha configurado correctamente.
 
-+ Usa el comando ***`ifconfig eth0 IP netmask Máscara`*** (con la configuración inicial de red) y pega una captura de pantalla que muestre que el adaptador de red se ha configurado correctamente.
+![Imagen 13](/img/13.png)
 
 
 ***3. Comando ping (Windows y Línux)***
@@ -126,17 +144,22 @@ Algunas opciones para Windows/Linux son
 
 + Desde una máquina con línux ejecuta el comando ***`ping –s 100 –c 2  ip\_puertadeenlace`*** para que se envíen dos ecos de 100 bytes. Muestra una captura de pantalla con el resultado.
 
+![Imagen 16](/img/16.png)
 
 
 + Desde una máquina con windows usa el comando ***`ping –i 2 ip\_puertadeenlace`*** para hacer un ping a nuestra puerta de enlace con un TTL igual a 2. 
 
+![Imagen 17](/img/14.png)
+
+![Imagen 18](/img/15.png)
+
 + Luego haz un ping de las mismas características, pero a google ***`ping –i 2 www.google.es`*** Pega una captura de pantalla con el resultado y explica lo que ha pasado.
 
-
+![Imagen 18](/img/18.png)
 
 + El comando ping nos da información sobre el tiempo de latencia de una red. Haz un ping a nuestra puerta de enlace y luego a otro a [www.google.es](http://www.google.es/). Busca información de lo que es el tiempo de latencia y compara los tiempos de latencia en ambos casos. 
 
-
+![Imagen 18](/img/18.png)
 
 ***4. Comando route (Línux)***
 
@@ -174,17 +197,25 @@ Nos muestra las conexiones que tiene nuestro host abiertas con la red. Algunas o
 
 Lo que se muestra en estas columnas, por orden, son el puerto TCP, los paquetes recibidos, enviados, la dirección local, la dirección a la web y el estado de la conenexión entre las dos columnas anteriores.
 
-
+![Imagen 23](/img/23.png)
 
 + Ahora espera unos segundos y vuelve a ejecutar `netstat -tn`. Comprobarás que algunas de las conexiones se han cerrado o están esperando para cerrarse. Además con la opción **-n** verás los resultados en formato numérico. Pon una captura de pantalla y explica la diferencia entre ***Established***, ***Time_wait*** y ***Close_Wait***.
 
 Lo que significa cada una de estos estados de red es, conexión establecida, conexión en tiempo de espera y conexión cerrada respectivamente.
 
+![Imagen 24](/img/24.png)
+
 + Ejecuta ahora la orden `netstat -at` para que muestre las tanto las conexiones tcp abiertas como los puertos que están a la escucha. Copia una captura de pantalla donde se vean los puertos que tienes escuchando, explica qué significan los asteriscos en la columna ***“Foreign address”*** e investiga si tener esos puertos abiertos es normal o supone una amenaza.
 
 El tipo de conexión es TCP tendrá el estado LISTEN. Esto quiere decir que la máquina local está esperando a que otra máquina remota envíe datos. En este caso es normal tenrlos abiertos porque el equipo está conectado dentro de una red.
 
+![Imagen 25](/img/25.png)
+
+
 + Ejecuta el comando `netstat -s` para ver las estadísticas de red y haz una captura en la que se vean cuantos paquetes tcp has recibido y cuantos de ellos han sido erroneos.
+
+![Imagen 26](/img/26.png)
+![Imagen 27](/img/27.png)
 
 ***6. Comando arp (Línux y Windows)***
 
@@ -199,12 +230,15 @@ Se usa para mostrar y administrar la caché `ARP` de nuestro equipo. Las opcione
 
 + Borra toda la caché ARP con el comando `arp -d *`. A continuación haz un ping a la puerta de enlace. Pon una captura de la tabla ARP en que se vea que solo está la puerta de enlace y su mac.
 
+![Imagen 22](/img/22.png)
+
 + Ahora borra manualmente la entrada arp de la puerta de enlace con la orden `arp -d ip_puertadeenlace`. Luego introduce manualmente una mac falsa para la puerta de enlace en la tabla arp con el comando `arp -s ip_puertadeenlace aa:bb:cc:dd:ee:ff` Haz una captura de pantalla en que se vea el resultado del comando arp -a y de hacer un ping a google. Explica por qué ahora no hay internet.
 
 Al introducir una mac falsa, el ordenador ha perdido la conexión.
 
 + Borra la entrada falsa de la tabla arp con el comando `arp -d ip_puertadeenlace`.
 
+![Imagen 28](/img/28.png)
 
 
 ***7. Comando nslookup (Línux y Windows)***
@@ -218,3 +252,5 @@ Este comando nos da información sobre la resolución de nombres dns. Nos dice a
 
 Averigua el nombre del servidor DNS de 
 https://www.puertodelacruz.es . A continuación, ejecutamos el comando nslookup nombreServidorDNS y luego el comando `nslookup nombreServidorDNS 8.8.8.8`. Explica las causas de las diferencias que hay entre los resultados de las dos consultas.
+
+![Imagen 29](/img/29.png)
