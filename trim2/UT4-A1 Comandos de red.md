@@ -103,7 +103,7 @@ Este comando nos permite mostrar la configuración IP de nuestra máquina y conf
 |Tiempo de concesión de la IP|valid_lft 86205sec preferred_lft 86205sec| 
 |Nombre del adaptador de red|enp0s3| 
 
-![Imagen 8](/img/8.png)
+![Imagen 8](pni_Gael_hg/trim2/8.png)
 
 ![Imagen 9](/img/9.png)
 
