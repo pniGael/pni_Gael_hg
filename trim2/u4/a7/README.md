@@ -113,6 +113,15 @@ VLAN Name                             Status    Ports
 
 Ejecutamos el codigo en cada switch siguiente solo en aquellas maquinas que se conecten a las VLAN2 y VLAN3:
 
+SW01(config-if)#interface fastEthernet 0/3
+SW01(config-if)#switchport access vlan 3
+
+Ahora que hemos configurado todas las VLAN tenemos, hacemos el siguiente comando 
+
+SW01#copy running-config startup-config 
+Destination filename [startup-config]? 
+Building configuration...
+[OK]
 5. Realizar ping entre los diferentes equipos para comprobar que la configuración
 de cada equipo funciona correctamente.
 
@@ -136,12 +145,9 @@ Comprobamos que para la VLAN2 no existe comunicacion porque no hay enlace trunck
 
 ![img12](./img/12.png)
 
-
-
-
-
-
-
+SW01(config)#interface fa0/24
+SW01(config-if)#switchport mode trunk
+SW01(config-if)#switchport trunk allowed vlan 1,3
 
 
 
